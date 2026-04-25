@@ -102,10 +102,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-service:2.7.0'
     
     // TensorFlow Lite - Optimized for A21S
-    implementation 'org.tensorflow:tensorflow-lite:2.15.0'
-    implementation 'org.tensorflow:tensorflow-lite-gpu:2.15.0'
+    implementation 'org.tensorflow:tensorflow-lite:2.16.1'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.16.1'
     implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
-    implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:2.15.0'
+    implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:2.16.1'
     
     // ONNX Runtime
     implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.16.3'
