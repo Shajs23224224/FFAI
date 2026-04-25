@@ -14,19 +14,6 @@ android {
         versionCode 1
         versionName "1.0.0-alpha"
         
-        // A21S Optimizations
-        ndk {
-            abiFilters 'arm64-v8a', 'armeabi-v7a'
-        }
-        
-        externalNativeBuild {
-            cmake {
-                cppFlags "-O3 -DNDEBUG -ffast-math -fomit-frame-pointer -funroll-loops -march=armv8-a+crc"
-                cFlags "-O3 -DNDEBUG -ffast-math"
-                arguments "-DANDROID_STL=c++_shared", "-DANDROID_PLATFORM=android-26"
-            }
-        }
-        
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -34,21 +21,11 @@ android {
         debug {
             minifyEnabled false
             debuggable true
-            externalNativeBuild {
-                cmake {
-                    cppFlags "-O2 -g"
-                }
-            }
         }
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            externalNativeBuild {
-                cmake {
-                    cppFlags "-O3 -DNDEBUG -ffast-math -fomit-frame-pointer -funroll-loops"
-                }
-            }
         }
     }
     
@@ -65,18 +42,7 @@ android {
         ]
     }
     
-    externalNativeBuild {
-        cmake {
-            path "src/main/cpp/CMakeLists.txt"
-            version "3.22.1"
-        }
-    }
-    
     packagingOptions {
-        pickFirst 'lib/x86/libc++_shared.so'
-        pickFirst 'lib/x86_64/libc++_shared.so'
-        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
-        pickFirst 'lib/arm64-v8a/libc++_shared.so'
         exclude 'META-INF/DUMMY.SF'
         exclude 'META-INF/DUMMY.RSA'
     }
