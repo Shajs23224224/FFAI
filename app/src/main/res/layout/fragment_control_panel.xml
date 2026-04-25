@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_dark">
+
+    <TextView
+        android:id="@+id/tvPersonality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo de Personalidad"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerPersonality"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/card_background"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPersonality" />
+
+    <TextView
+        android:id="@+id/tvAssistLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nivel de Asistencia"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPersonality" />
+
+    <Spinner
+        android:id="@+id/spinnerAssistLevel"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/card_background"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAssistLevel" />
+
+    <TextView
+        android:id="@+id/tvAggression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nivel de Agresión"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerAssistLevel" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderAggression"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:stepSize="1"
+        android:valueFrom="0"
+        android:valueTo="100"
+        app:haloColor="@color/accent_green"
+        app:thumbColor="@color/accent_green"
+        app:trackColorActive="@color/accent_green"
+        app:trackColorInactive="@color/surface_dark"
+        app:layout_constraintEnd_toStartOf="@id/tvAggressionValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAggression" />
+
+    <TextView
+        android:id="@+id/tvAggressionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="50%"
+        android:textColor="@color/accent_green"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/sliderAggression"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sliderAggression" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchInference"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:checked="true"
+        android:text="Inferencia IA"
+        android:textColor="@color/text_primary"
+        app:thumbTint="@color/accent_green"
+        app:trackTint="@color/surface_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sliderAggression" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switchScreenCapture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:text="Captura de Pantalla"
+        android:textColor="@color/text_primary"
+        app:thumbTint="@color/accent_green"
+        app:trackTint="@color/surface_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchInference" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

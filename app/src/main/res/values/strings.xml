@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">FFAI</string>
+    <string name="accessibility_service_description">FFAI Accessibility Service - Permite a la IA analizar la pantalla y ejecutar gestos táctiles para asistir en el juego. Requiere este permiso para funcionar correctamente.</string>
+    <string name="status_active">Estado: Activo</string>
+    <string name="status_inactive">Estado: Inactivo</string>
+    <string name="btn_start">Iniciar Servicio</string>
+    <string name="btn_stop">Detener Servicio</string>
+    <string name="btn_settings">Configuración</string>
+    <string name="tab_control">Control</string>
+    <string name="tab_performance">Rendimiento</string>
+    <string name="tab_personality">Personalidad</string>
+    <string name="permission_required">Permiso Requerido</string>
+    <string name="accessibility_explanation">FFAI necesita permiso de accesibilidad para:\n\n• Detectar elementos en pantalla\n• Ejecutar gestos táctiles\n• Controlar el juego\n\nPor favor, activa FFAI Core Service en la siguiente pantalla.</string>
+    <string name="continue_text">Continuar</string>
+    <string name="cancel">Cancelar</string>
+    
+    <!-- Personality Modes -->
+    <string name="personality_ultra_defensive">Ultra Defensivo</string>
+    <string name="personality_defensive">Defensivo</string>
+    <string name="personality_balanced">Equilibrado</string>
+    <string name="personality_aggressive">Agresivo</string>
+    <string name="personality_ultra_aggressive">Ultra Agresivo</string>
+    <string name="personality_stealth">Sigiloso</string>
+    <string name="personality_sniper">Francotirador</string>
+    <string name="personality_rusher">Asaltante</string>
+    
+    <!-- Assist Levels -->
+    <string name="assist_none">Ninguno</string>
+    <string name="assist_passive">Pasivo</string>
+    <string name="assist_semi">Semi-Automático</string>
+    <string name="assist_full">Completo</string>
+    <string name="assist_custom">Personalizado</string>
+    
+    <!-- Performance Metrics -->
+    <string name="metric_fps">FPS</string>
+    <string name="metric_latency">Latencia</string>
+    <string name="metric_cpu">CPU</string>
+    <string name="metric_memory">Memoria</string>
+    <string name="metric_temperature">Temperatura</string>
+    <string name="metric_inference_time">Tiempo Inferencia</string>
+    
+    <!-- Control Labels -->
+    <string name="label_aggression">Nivel de Agresión</string>
+    <string name="label_assist_level">Nivel de Asistencia</string>
+    <string name="label_inference">Inferencia IA</string>
+    <string name="label_screen_capture">Captura de Pantalla</string>
+</resources>

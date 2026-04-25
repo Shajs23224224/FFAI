@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/accessibility_service_description"
+    android:packageNames="com.dts.freefireth,com.dts.freefiremax,com.garena.game.codm,com.pubg.krmobile,com.tencent.ig,com.tencent.iglite"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFlags="flagReportViewIds|flagRetrieveInteractiveWindows|flagRequestEnhancedWebAccessibility|flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:canRequestTouchExplorationMode="true"
+    android:canRequestFilterKeyEvents="true"
+    android:canRequestFingerprintGestures="true"
+    android:canControlMagnification="false"
+    android:settingsActivity="com.ffai.MainActivity"
+    android:notificationTimeout="100" />
