@@ -1,7 +1,6 @@
 // Top-level build file
 buildscript {
     ext.kotlin_version = '1.9.20'
-    ext.detekt_version = '1.23.3'
     
     repositories {
         google()
@@ -11,13 +10,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.9.4'
-        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$detekt_version"
     }
-}
-
-plugins {
-    id "io.gitlab.arturbosch.detekt" version "1.23.3" apply false
 }
 
 allprojects {
