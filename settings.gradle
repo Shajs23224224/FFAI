@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "FFAI"
 include ':app'
-include ':opencv'
+// TODO: Add OpenCV module when needed for image processing
+// include ':opencv'
